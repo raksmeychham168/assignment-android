@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textVaccineHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccine Names:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vaccine Name"
+        android:inputType="text"
+        android:layout_below="@id/textVaccineHeader"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="text"
+        android:layout_below="@id/etVaccineName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etMonthDue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Month Due"
+        android:inputType="number"
+        android:text="0"
+        android:layout_below="@id/etDescription"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSaveVaccine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/etMonthDue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

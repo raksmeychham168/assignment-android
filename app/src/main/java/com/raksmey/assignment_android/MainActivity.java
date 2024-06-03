@@ -4,6 +4,8 @@ import android.os.Bundle;
 import androidx.core.content.ContextCompat;
 import android.os.Build;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -34,6 +36,45 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, ExchangeRateActivity.class);
             startActivity(i);
         });
+
+        Button btnRegisterChild = findViewById(R.id.btnRegisterChild);
+        Button btnRecordVaccination = findViewById(R.id.btnRecordVaccination);
+        Button btnViewRecords = findViewById(R.id.btnViewRecords);
+        Button bRecordVaccine = findViewById(R.id.btnRecordVaccine);
+
+        btnRegisterChild.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RegisterChildActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRecordVaccination.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecordVaccinationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnViewRecords.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ViewRecordsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bRecordVaccine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecordVaccineActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override
