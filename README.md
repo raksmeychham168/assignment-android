@@ -13,3 +13,5 @@ Each button call each activity to calculate the exchange rate
 
 Exercise 02: How to create Menu
     ![Exercise 02_screen](image-1.png)
+Midterm How to create Record Vaccine
+![image](https://github.com/raksmeychham168/assignment-android/assets/157896240/630aac91-e6e4-4fb6-8fa2-2e56139fdaca)
