@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnRecordVaccination = findViewById(R.id.btnRecordVaccination);
         Button btnViewRecords = findViewById(R.id.btnViewRecords);
         Button bRecordVaccine = findViewById(R.id.btnRecordVaccine);
+        ImageView mainHomework3 = findViewById(R.id.mainHomework3);
+        RelativeLayout subMenuCYB = findViewById(R.id.sub_menu_cyb);
+
+        mainHomework3.setOnClickListener(v ->{
+            subMenuCYB.setVisibility(View.VISIBLE);
+        });
 
         btnRegisterChild.setOnClickListener(new View.OnClickListener() {
             @Override
